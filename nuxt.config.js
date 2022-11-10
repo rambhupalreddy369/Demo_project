@@ -1,4 +1,5 @@
 import colors from "vuetify/es5/util/colors";
+import { APP_ICONS } from "./utils/constants/icons";
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -59,19 +60,44 @@ export default {
     theme: {
       dark: true,
       themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
+        // dark: {
+        //   primary: colors.blue.darken2,
+        //   accent: colors.grey.darken3,
+        //   secondary: colors.amber.darken3,
+        //   info: colors.teal.lighten1,
+        //   warning: colors.amber.base,
+        //   error: colors.deepOrange.accent4,
+        //   success: colors.green.accent3,
+        // },
+        light: {
+          primary: "#0D1B2A",
+          secondary: "#1B263B",
+          accent: "#415A77",
+          error: "#FF5252",
+          info: "#2196F3",
+          success: "#4CAF50",
+          warn: "#FFC107",
+          background: "#E7ECEF",
+          action: "#1A237E",
+        },
+        dark: {},
+        default: {
+          primary: "#1976D2",
+          secondary: "#424242",
+          accent: "#82B1FF",
+          error: "#FF5252",
+          info: "#2196F3",
+          success: "#4CAF50",
+          warn: "#FFC107",
+          background: "#D9D9D9",
+          action: "#1A237E",
         },
       },
     },
   },
-
+  icons: {
+    values: APP_ICONS,
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 };
