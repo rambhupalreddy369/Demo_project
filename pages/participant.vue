@@ -1,14 +1,14 @@
 <template>
   <v-card color="blue-grey darken-1" dark :loading="isUpdating">
-    <!-- <template v-slot:progress>
+    <template v-slot:progress>
       <v-progress-linear
         absolute
         color="green lighten-3"
         height="4"
         indeterminate
       ></v-progress-linear>
-    </template> -->
-    <!-- <v-img
+    </template>
+    <v-img
       height="200"
       src="https://cdn.vuetifyjs.com/images/cards/dark-beach.jpg"
     >
@@ -41,7 +41,7 @@
           </v-col>
         </v-row>
       </v-row>
-    </v-img> -->
+    </v-img>
     <v-form>
       <v-container>
         <v-row>
