@@ -8,8 +8,9 @@
               v-for="(column, columnIndex) in columns"
               :key="column.title"
               :item="column"
+              :style="{ 'background-color': column.color }"
               class="mr-2 task"
-              style="max-width: 320px; min-width: 320px"
+              style="max-width: 320px; min-width: 320px; height: fit-content"
             >
               <div class="list-header pa-2">
                 <div class="header">
@@ -113,6 +114,7 @@ export default {
       columns: [
         {
           title: "Unsolved",
+          color: "#E53935",
           tasks: [
             {
               title: "Task1",
@@ -127,6 +129,7 @@ export default {
         },
         {
           title: "Solving",
+          color: "#FF9800",
           tasks: [
             {
               id: 3,
@@ -142,6 +145,7 @@ export default {
         },
         {
           title: "Solved",
+          color: "#4CAF50",
           tasks: [
             {
               id: 5,

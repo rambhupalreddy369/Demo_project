@@ -11,7 +11,7 @@
                   <template v-slot:activator="{ on, attrs }">
                     <v-btn dark icon v-bind="attrs" v-on="on">
                       <v-icon color="black" style="font-size: 18px"
-                        >$more_menu</v-icon
+                        >mdi-dots-vertical</v-icon
                       >
                     </v-btn>
                   </template>
